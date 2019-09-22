@@ -20,8 +20,9 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
 }
+
 
 .src-only {
     display: none;
@@ -36,20 +37,23 @@ p{
     padding: 1rem;
     line-height: 25px;
 }
-
+/* Modificando el tamaño y los margenes del logo */
 .logo {
-    width: 90px;
-    margin: 1em;
+    width: 100px;
+    margin-top: 2em;
+    margin-left: 3.5em;
 }
 
+/* se modifico el tamaño de fuente para ajustar el icono del menu
+    a un tamaño más apto y se modifico el espacio del lado derecho
+*/
 .options {
     color: inherit;
     text-decoration: none;
     position: relative;
     top: 30%;
-    right: 95%;
-    font-size: 1.5rem;
-
+    right: 200%;
+    font-size: 4.5rem;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -61,7 +65,8 @@ p{
 
 /* Big area */
 .big-hero img {
-    width: 150px;
+    margin-top: 2em;
+    width: 130px;
 }
 
 .big-hero h2 {
@@ -72,26 +77,32 @@ p{
 }
 
 .big-hero p {
-    font-size: 0.7em;;
+    font-size: 0.9em;
     color: #D7DEE6;
+    padding-top: 0.5em;
 
 }
 
 /* Social links*/
+/* Se minimizo el margen superior a un valor negativo para que encajara con el modelo
+
+*/
 .social-links{
     list-style: none;
-    padding: 0;
-    margin-top: 3em;
+    padding-bottom: 4em;
+    margin-top: -4.5em;
     display: flex;
     flex-direction: row;
     justify-content: center
+    
 
 }
 
 .social-links li a{
     color: #D7DEE6;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 8em;
+    margin: 0.1em;
 }
 
 
@@ -107,18 +118,18 @@ p{
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.125em;
+    font-size: 1.2em;
     margin: 1em;
 }
 
 .post ul {
     list-style: none;
 }
-
+/* Se minimizo el margen superior e inferior */
 .post ul li {
     min-height: 300px;
-    max-width: 350px;
-    margin: 2rem auto;
+    max-width: 250px;
+    margin: 1.5rem auto;
 }
 
 .post ul li article {
@@ -137,19 +148,22 @@ p{
 
 .post article h3 {
     color: #0D5061;
-    margin-top: 2em;
+    margin-top: 0.5em;
     padding: 0em 1rem;
     font-size: 0.9em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
+/*
+Se modifico el tamaño de fuente y la propieda line-heigth para que disminuir el espacio
+entre las filas de letras
+*/
 .post article p {
     color:#112935;
-    font-size: 0.75em;
+    font-size: 0.8em;
     padding: 1rem;
-    line-height: 25px;
+    line-height: 20px;
 }
 
 /* About */
@@ -164,41 +178,54 @@ p{
     font-size: 1.125em;
     margin: 2em;
 }
-
+/* se disminuyo el margen inferior */
+.bio-info{
+    margin-bottom: -1em;
+}
+/* Se minimizo el tamaño de la imagen */
 .bio-info img{
-   width: 200px;
+   width: 100px;
 }
-
+/* Se aumento el espacio interno para centrar el texto, se disminuyo el tamaño de fuente
+    el espacio entre letras y el espacio entre lineas se adapto lo mas parecido al modelo
+*/
 .bio-info p{
-    font-size: 16px;
-    padding: 2em;
+    font-size: 12px;
+    padding: 5em;
     text-align: left;
-    line-height: 25px;
-    letter-spacing: 2px;
+    line-height:20px;
+    letter-spacing: 1px;
 }
-
+/* se aumento el espacio interno izquierdo y derecho */
 .contact {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding: 0px 1em;
+    padding: 0px 3em;
+}
+/* se modifico el espacio entre label e inputs para acercarlos mas */
+.contact * + * {
+    margin-top: 1.1em;
+}
+/* se agrego mayor grosor a los label */
+.contact label{
+    font-weight: bold;
 }
 
-.contact * + * {
-    margin-top: 1.5em;
-}
+
 
 .contact-form {
     display: flex;
     flex-direction: column;
 }
-
+/* se agrego fondo blanco a los inputs y textarea */
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
     border: none;
     border-radius: 0px 2em;
     font-size: 1em;
     width: 100%;
+    background: #ffffff;
 }
 
 /* Decorando placeholder */
@@ -212,12 +239,17 @@ p{
 ::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
  
 :-ms-input-placeholder { color: #D7DEE6; }
-
+/* Se modifico el tamaño del boton con a partir del padding y se agrego espacio en los margenes
+superior e inferior
+*/
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
     color: white;
     font-size: 1rem;
+    padding: 0.7em;
+    margin-bottom: 3em;
+    margin-top: 1.3em;
 }
 
 .black-decoration{
@@ -231,6 +263,7 @@ footer{
 
 footer .social-links {
     margin: 0;
+    padding-bottom: 0px;
 }
 
 .menu {
@@ -290,7 +323,7 @@ footer .social-links {
     .hide-desktop {
         display: none;
     }
-
+/* Se eliminara el margin top */
     .menu {
         background-color: #112935; 
         position: static;
@@ -310,9 +343,34 @@ footer .social-links {
 @media only screen and (min-width: 1024px) {
 
        /*TODO: FALTA CSS */
-
-
-
+.logo{
+    width: 100px;
+}
+.header{
+    margin-inline-start: 5em;
+}
+.menu{
+    margin-top: 0;
+}
+nav{
+    width: 28%;
+}
+a[href="#post"]{
+    color: #0AC693;
+    font-size: 100px;
+    margin-top: -1em;
+    margin-bottom: 0.7em;
+}
+.social-links li a{
+    margin:0.2em;
+}
+.post ul li{
+    max-width: 250px;
+    margin: auto 75px;
+}
+.post h2{
+    font-weight: bold;
+}
 }
 
 @media only screen and (min-width: 1440px) {
