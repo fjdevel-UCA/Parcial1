@@ -2,14 +2,19 @@
 
 /* El CSS siguiente esta pensando primero para moviles y luego para 
    Escritiorio*/
-*, ::before, ::after {
+
+*,
+ ::before,
+ ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: calc(0.5em + 1vh);
 }
 
+
 /* El estilo base para moviles */
+
 body {
     background-color: #112935;
     color: white;
@@ -23,7 +28,6 @@ body {
     justify-content: space-between;
 }
 
-
 .src-only {
     display: none;
 }
@@ -32,21 +36,26 @@ body {
     display: none;
 }
 
-p{
+p {
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
 }
+
+
 /* Modificando el tamaño y los margenes del logo */
+
 .logo {
     width: 100px;
     margin-top: 2em;
     margin-left: 3.5em;
 }
 
+
 /* se modifico el tamaño de fuente para ajustar el icono del menu
     a un tamaño más apto y se modifico el espacio del lado derecho
 */
+
 .options {
     color: inherit;
     text-decoration: none;
@@ -57,13 +66,15 @@ p{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-
 }
+
 .options i:last-child {
     font-size: 1.6rem;
 }
 
+
 /* Big area */
+
 .big-hero img {
     margin-top: 2em;
     width: 130px;
@@ -73,48 +84,48 @@ p{
     font-size: 1.875em;
     font-weight: 700;
     letter-spacing: 0.002em;
-    margin-top: 1em ;
+    margin-top: 1em;
 }
 
 .big-hero p {
     font-size: 0.9em;
     color: #D7DEE6;
     padding-top: 0.5em;
-
 }
 
+
 /* Social links*/
+
+
 /* Se minimizo el margen superior a un valor negativo para que encajara con el modelo
 
 */
-.social-links{
+
+.social-links {
     list-style: none;
     padding-bottom: 4em;
     margin-top: -4.5em;
     display: flex;
     flex-direction: row;
     justify-content: center
-    
-
 }
 
-.social-links li a{
+.social-links li a {
     color: #D7DEE6;
     text-decoration: none;
     font-size: 8em;
     margin: 0.1em;
 }
 
-
 .green-area {
-    background-color: #0AC693; 
+    background-color: #0AC693;
 }
-
 
 .post {
     padding: 1em;
     margin-bottom: -2px;
 }
+
 .post h2 {
     text-transform: uppercase;
     font-weight: 700;
@@ -125,7 +136,10 @@ p{
 .post ul {
     list-style: none;
 }
+
+
 /* Se minimizo el margen superior e inferior */
+
 .post ul li {
     min-height: 300px;
     max-width: 250px;
@@ -140,7 +154,7 @@ p{
     padding-bottom: 2em;
 }
 
-.post article img{
+.post article img {
     height: 150px;
     width: 100%;
     object-fit: cover;
@@ -155,20 +169,24 @@ p{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+
 /*
 Se modifico el tamaño de fuente y la propieda line-heigth para que disminuir el espacio
 entre las filas de letras
 */
+
 .post article p {
-    color:#112935;
+    color: #112935;
     font-size: 0.8em;
     padding: 1rem;
     line-height: 20px;
 }
 
+
 /* About */
 
-.about{
+.about {
     margin-top: 2em;
 }
 
@@ -178,48 +196,68 @@ entre las filas de letras
     font-size: 1.125em;
     margin: 2em;
 }
+
+
 /* se disminuyo el margen inferior */
-.bio-info{
+
+.bio-info {
     margin-bottom: -1em;
 }
+
+
 /* Se minimizo el tamaño de la imagen */
-.bio-info img{
-   width: 100px;
+
+.bio-info img {
+    width: 100px;
 }
+
+
 /* Se aumento el espacio interno para centrar el texto, se disminuyo el tamaño de fuente
     el espacio entre letras y el espacio entre lineas se adapto lo mas parecido al modelo
 */
-.bio-info p{
+
+.bio-info p {
     font-size: 12px;
     padding: 5em;
     text-align: left;
-    line-height:20px;
+    line-height: 20px;
     letter-spacing: 1px;
 }
+
+
 /* se aumento el espacio interno izquierdo y derecho */
+
 .contact {
     display: flex;
     flex-direction: column;
     text-align: left;
     padding: 0px 3em;
 }
+
+
 /* se modifico el espacio entre label e inputs para acercarlos mas */
-.contact * + * {
+
+.contact *+* {
     margin-top: 1.1em;
 }
+
+
 /* se agrego mayor grosor a los label */
-.contact label{
+
+.contact label {
     font-weight: bold;
 }
-
-
 
 .contact-form {
     display: flex;
     flex-direction: column;
 }
+
+
 /* se agrego fondo blanco a los inputs y textarea */
-.contact-form input, .contact-form textarea{
+
+.contact-form input,
+.contact-form textarea {
     padding: 1rem 2rem;
     border: none;
     border-radius: 0px 2em;
@@ -228,20 +266,32 @@ entre las filas de letras
     background: #ffffff;
 }
 
+
 /* Decorando placeholder */
 
-::-webkit-input-placeholder { 
-    color: #D7DEE6; 
-} 
- 
-:-moz-placeholder { /* Firefox 18- */ color: #D7DEE6; } 
- 
-::-moz-placeholder { /* Firefox 19+ */ color: #D7DEE6; } 
- 
-:-ms-input-placeholder { color: #D7DEE6; }
+::-webkit-input-placeholder {
+    color: #D7DEE6;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #D7DEE6;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #D7DEE6;
+}
+
+:-ms-input-placeholder {
+    color: #D7DEE6;
+}
+
+
 /* Se modifico el tamaño del boton con a partir del padding y se agrego espacio en los margenes
 superior e inferior
 */
+
 .contact-form input[type=submit] {
     background-color: #F74442;
     font-weight: 400;
@@ -252,13 +302,13 @@ superior e inferior
     margin-top: 1.3em;
 }
 
-.black-decoration{
+.black-decoration {
     background-image: url("../images/decoracion_oscura_small.svg");
 }
 
-footer{
+footer {
     background-color: #0D5061;
-    color:#D7DEE6;
+    color: #D7DEE6;
 }
 
 footer .social-links {
@@ -281,6 +331,7 @@ footer .social-links {
     text-align: left;
     padding: 1em;
 }
+
 .menu li {
     display: block;
     padding: 0.5em;
@@ -290,91 +341,101 @@ footer .social-links {
 .menu li a {
     color: white;
     text-decoration: none;
-    
 }
 
+
 /* Pesonalizando estilo para tablets*/
+
 @media only screen and (min-width: 768px) {
-  
     .post ul {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
     .post ul li {
         min-height: 350px;
         max-height: 3500px;
         margin: 1rem 2rem;
         flex: 1 0 300px;
     }
-
-
     .logo {
         width: 150px;
         margin: 1.5em;
     }
-
     .show-desktop {
         display: block;
     }
-
     .hide-desktop {
         display: none;
     }
-/* Se eliminara el margin top */
+    /* Se eliminara el margin top */
     .menu {
-        background-color: #112935; 
+        background-color: #112935;
         position: static;
         z-index: 20;
         width: auto;
-        height:auto;
+        height: auto;
         display: flex;
         margin-top: 1em;
     }
-
-
-
-
     /*TODO: FALTA CSS */
-} 
+}
 
 @media only screen and (min-width: 1024px) {
-
-       /*TODO: FALTA CSS */
-.logo{
-    width: 100px;
-}
-.header{
-    margin-inline-start: 5em;
-}
-.menu{
-    margin-top: 0;
-}
-nav{
-    width: 28%;
-}
-a[href="#post"]{
-    color: #0AC693;
-    font-size: 100px;
-    margin-top: -1em;
-    margin-bottom: 0.7em;
-}
-.social-links li a{
-    margin:0.2em;
-}
-.post ul li{
-    max-width: 250px;
-    margin: auto 75px;
-}
-.post h2{
-    font-weight: bold;
-}
+    /*TODO: FALTA CSS */
+    .logo {
+        width: 100px;
+    }
+    .header {
+        margin-inline-start: 5em;
+    }
+    .menu {
+        margin-top: 0;
+    }
+    nav {
+        width: 28%;
+    }
+    a[href="#post"] {
+        color: #0AC693;
+        font-size: 100px;
+        margin-top: -1em;
+        margin-bottom: 0.7em;
+    }
+    .social-links li a {
+        margin: 0.2em;
+    }
+    .post ul li {
+        max-width: 250px;
+        margin: auto 75px;
+    }
+    .post h2 {
+        font-weight: bold;
+    }
+    .about .container {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .about .container h2 {
+        flex: 1 1 auto;
+        width: 100%;
+        margin-bottom: 4em;
+    }
+    .bio-info {
+        flex: 1 1 auto;
+        width: 50%;
+        padding-right: 5em;
+        padding-left: 5em;
+    }
+    .contact {
+        flex: 1 1 auto;
+        width: 50%;
+        padding-right: 5em;
+        padding-left: 5em;
+    }
 }
 
 @media only screen and (min-width: 1440px) {
-
     /*TODO: FALTA CSS */
     .container {
         width: 80%;
